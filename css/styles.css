@@ -158,26 +158,3 @@ button {
 button:hover {
     background-color: #218838; /* Cor do botão ao passar o mouse */
 }
-
-/* Estilos Responsivos */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Tamanho de fonte para dispositivos móveis */
-    }
-
-    .navbar {
-        flex-direction: column; /* Altera a direção da navbar para coluna */
-    }
-
-    .nav-links {
-        display: none; /* Oculta os links de navegação por padrão */
-    }
-
-    .nav-links.active {
-        display: flex; /* Exibe os links quando a classe 'active' é adicionada */
-    }
-
-    .menu-icon {
-        display: flex; /* Exibe o ícone do menu */
-    }
-}
