@@ -1,3 +1,0 @@
-mkdir docs
-mv sitehtml docs/
-source: docs/sitehtml
