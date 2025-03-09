@@ -1,0 +1,183 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margens do body */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+.text-h2 {
+    text-align: center; /* Centraliza o título */
+}
+/* Estilos personalizados para a classe text-h2 */
+.text-h3 {
+    background-color: #85c3f823; /* Cor de fundo suave */
+    border: 2px solid #a1af25; /* Borda azul */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Margem externa */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    color: #333; /* Cor do texto */
+}
+
+.text-h3 h3 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin: 0; /* Remove margem do título */
+}
+
+.text-h3 p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Altura da linha */
+}
+
+/* Estilos do Cabeçalho */
+header {
+    width: 100%; /* Largura total do cabeçalho */
+    background-color: #000000; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    display: flex; /* Usando flexbox para alinhar itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+/* Estilos da Navbar */
+.navbar {
+    display: flex; /* Usando flexbox para a barra de navegação */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    width: 100%; /* Largura total da navbar */
+}
+
+.logo {
+    width: 90px; /* Largura da imagem do logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+nav {
+    flex-grow: 1; /* Permite que o nav ocupe o espaço restante */
+}
+
+nav ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+    display: flex; /* Exibe os itens da lista em linha */
+    justify-content: flex-start; /* Alinha os links à esquerda */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaço entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 15px; /* Espaçamento interno para criar espaço ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: rgba(97, 21, 21, 0.411); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos do Contêiner */
+.container {
+    display: flex; /* Usando flexbox */
+    align-items: flex-start; /* Alinha a imagem e o texto no topo */
+    max-width: 900px; /* Largura máxima do contêiner */
+    margin: auto; /* Centraliza o contêiner */
+    background: white; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.container img {
+    width: 600px; /* A imagem ocupa 50% da largura do contêiner */
+    height: 600px; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+/* Estilos da Área de Texto */
+.text-area {
+    max-height: 20000px; /* Altura máxima da área de texto */
+    overflow: hidden; /* Oculta o texto que excede a altura */
+    position: relative; /* Para posicionar o botão */
+}
+
+.more-text {
+    display: none; /* Oculta o texto adicional por padrão */
+    margin-top: 0px; /* Espaço acima do texto adicional */
+}
+
+.toggle-button {
+    margin-top: 10px; /* Espaço acima do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+}
+
+.toggle-button:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos do Vídeo */
+.video-container {
+    display: flex;
+    justify-content: center; /* Centraliza o vídeo */
+    margin-top: 20px; /* Espaço acima do vídeo */
+}
+
+iframe {
+    width: 100%; /* Largura total do iframe */
+    max-width: 800px; /* Largura máxima do iframe */
+    height: 450px; /* Altura do iframe */
+    border: none; /* Remove borda do iframe */
+}
+
+/* Estilos dos Controles do Vídeo */
+.controls {
+    text-align: center; /* Centraliza os controles */
+    margin-top: 20px; /* Espaço acima dos controles */
+}
+
+button {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+button:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Tamanho de fonte para dispositivos móveis */
+    }
+
+    .navbar {
+        flex-direction: column; /* Altera a direção da navbar para coluna */
+    }
+
+    .nav-links {
+        display: none; /* Oculta os links de navegação por padrão */
+    }
+
+    .nav-links.active {
+        display: flex; /* Exibe os links quando a classe 'active' é adicionada */
+    }
+
+    .menu-icon {
+        display: flex; /* Exibe o ícone do menu */
+    }
+}
