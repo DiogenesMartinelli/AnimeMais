@@ -158,3 +158,23 @@ button {
 button:hover {
     background-color: #218838; /* Cor do botão ao passar o mouse */
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Faz a imagem e o texto ficarem empilhados */
+    align-items: center; /* Centraliza o conteúdo */
+  }
+
+  .container img {
+    width: 100%; /* A imagem ocupa a largura total do contêiner */
+    height: auto; /* Mantém a proporção */
+  }
+
+  nav ul {
+    flex-direction: column; /* Navegação em coluna para caber melhor */
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espaço entre os itens da navegação */
+  }
+}
